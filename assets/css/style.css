@@ -1,0 +1,79 @@
+/*General*/
+:root{
+    --dark:#1e1f24;
+    --white:#ffffff;
+    --grey:#efefef;
+    --gold:#dd9365;
+}
+
+body{
+    background-color:var(--dark);
+    font-family:'Oswald', sans-serif;
+    letter-spacing:.1rem;
+    color:var(--white);
+}
+
+.text-dark{color:var(--dark)!important;}
+.text-gold,
+.text-gold:hover{color:var(--gold);}
+.lead{font-size:1.5rem;}
+
+/*Navbar*/
+.navbar{min-height:100px;}
+.navbar img{width:170px;}
+.navbar-dark,
+.bg-dark{background-color:var(--dark)!important;}
+
+/*content*/
+.border-left{border-left:7px solid rgba(256,256,256,.2)!important;}
+
+/*carousel*/
+.buy{
+    background-color:rgba(256, 256, 256, .65);
+    bottom:0;
+}
+.buy a,
+.buy a:hover{color:var(--dark)!important;}
+.carousel-inner{max-height:100vh;}
+
+.carousel-control-prev,
+.carousel-control-next{
+    background-color: var(--dark);
+    height: 50px;
+    width: 50px;
+    bottom:150px;
+    top:unset;
+    border-radius:50%;
+}
+
+.content ul a{color:rgba(256, 256, 256, .2)!important;}
+.content ul a:hover{color:rgba(256, 256, 256, .5)!important;}
+
+.video-button{
+    bottom:0;
+    top:0;
+    right:0;
+    left:0;
+    font-size:70px; 
+    background-color:var(--dark);
+    height:140px;
+    width:160px; 
+    border:10px solid rgba(256, 256, 256, .3);
+    z-index:999;
+    border-radius:50%;
+    padding:0px 45px;
+    background-clip:padding-box;
+    transition:all .5s;
+}
+
+.video-button:hover{
+    transform:scale(1.1);
+    transition:all .5s;
+}
+
+@media (max-width: 767.98px) {     
+    .display-1{font-size:4rem;}
+    .buy h2{font-size:2rem;}
+}
+
+
